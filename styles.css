@@ -37,7 +37,7 @@ button:focus {
     outline: none;
 }
 .sticker {
-    max-width: 30%;
+    max-width: 50%;
     height: auto;
     margin-bottom: 20px;
 }
