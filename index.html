@@ -4,93 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesan Untuk Orang Spesial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div id="container">
-    <img class="sticker" src="1712618031088.png" alt="Sticker or GIF">
-    <h1>Untuk Sayangku!</h1>
-    <div id="messageContainer">
-        <div id="pesan1" class="pesan">
-            <p>Lama nih kita gak bertukar kabar. 
-            <p>Gimana kabarnya hari ini? Aku harap kamu baik-baik aja ya.</p>
-            <p>Aku sih baik-baik aja, tapi rasanya ada yang kurang gitu di hari-hariku tanpa kamu.</p>
-            <p>Tau gak sih, aku tuh kangen banget sama kamu.</p>
-            <p>Rasanya kayak ada lubang besar di hatiku yang gak bisa diisi sama apa pun.</p>
-            <button onclick="tampilkanPesan(2)">Next</button>
-        </div>
-        <div id="pesan2" class="pesan" style="display: none;">
-            <p>Setiap pagi, pas aku bangun tidur, yang pertama kali terlintas di benakku adalah wajah cantikmu.</p>
-            <p>Aku masih inget banget gimana senyum kamu yang menawan itu bisa bikin hatiku meleleh.</p>
-            <p>Aku kangen banget sama ketawamu yang lucu, yang selalu bisa bikin aku lupa sama semua masalahku.</p>
-            <p>Aku kangen sama pipimu yang gemesin, yang selalu ingin aku cubit.</p>
-            <p>Aku kangen sama semua hal tentang kamu, dari ujung rambut sampe ujung kaki.</p>
-            <button onclick="tampilkanPesan(3)">Next</button>
-        </div>
-        <div id="pesan3" class="pesan" style="display: none;">
-            <p>Setiap menit, setiap detik, rasanya kayak berabad-abad kalo gak ada kamu.</p>
-            <p>Waktu terasa begitu lambat dan membosankan tanpamu.</p>
-            <p>Aku gak bisa fokus ngerjain apa pun, soalnya yang ada di pikiran aku cuma kamu.</p>
-            <p>Kamu tuh kayak oksigen buat aku.</p>
-            <p>Gak bisa hidup tanpamu.</p>
-            <button onclick="tampilkanPesan(4)">Next</button>
-        </div>
-        <div id="pesan4" class="pesan" style="display: none;">
-            <p>Setiap aku liat langit, aku selalu inget sama kamu.</p>
-            <p>Soalnya, senyuman kamu tuh secerah langit biru.</p>
-            <p>Setiap aku liat bunga, aku selalu inget sama kamu.</p>
-            <p>Soalnya, kecantikan kamu tuh melebihi indahnya bunga-bunga.</p>
-            <button onclick="tampilkanPesan(5)">Next</button>
-        </div>
-        <div id="pesan5" class="pesan" style="display: none;">
-            <p>Sayang, kamu tuh selalu ada di pikiran aku. 
-            <p>Dari pagi sampe malam, dari bangun tidur sampe mimpi indah yang ada di pikiran aku cuma kamu.</p>
-            <p>Aku gak tau gimana cara ngungkapin rasa kangen aku ini.</p>
-            <p>Rasanya kayak semua kata-kata di dunia gak cukup untuk ngegambarin gimana kangennya aku sama kamu.</p>
-            <button onclick="tampilkanPesan(6)">Next</button>
-        </div>
-        <div id="pesan6" class="pesan" style="display: none;">
-            <p>Yang aku tau, aku sayang banget sama kamu. 
-            <p>Aku cinta banget sama kamu.</p>
-            <p>Cintaku sama kamu tuh kayak laut, yang gak ada ujungnya.</p>
-            <p>Cintaku sama kamu tuh kayak gunung, yang gak pernah runtuh.</p>
-            <p>Cintaku sama kamu tuh kayak langit, yang gak pernah pudar.</p>
-            <button onclick="tampilkanPesan(7)">Next</button>
-        </div>
-        <div id="pesan7" class="pesan" style="display: none;">
-            <p>Dan aku gak sabar buat ketemu sama kamu lagi.</p>
-            <p>Aku pengen cepet-cepet ngelihat wajah cantikmu, ngerasain pelukan hangatmu, dan ngedengerin suara merdumu.</p>
-            <p>Aku udah gak tahan lagi buat jauh-jauh dari kamu.</p>
-            <button onclick="tampilkanPesan(8)">Next</button>
-        </div>
-        <div id="pesan8" class="pesan" style="display: none;">
-            <p>Aku tau, mungkin aku gak selalu bisa bikin kamu bahagia.</p>
-            <p>Tapi, percayalah, kamu selalu jadi orang yang paling spesial di hatiku.</p>
-            <p>Kamu adalah cinta sejatiku, dan aku gak mau kehilangan kamu.</p>
-            <p>Aku janji, aku bakal selalu setia dan jaga kamu.</p>
-            <p>Aku bakal selalu ada buat kamu, di saat senang maupun di saat susah.</p>
-            <button onclick="tampilkanPesan(9)">Next</button>
-        </div>
-        <div id="pesan9" class="pesan" style="display: none;">
-            <p>Sebentar lagi kita bakal ketemu, kan?</p>
-            <button onclick="tampilkanPesan(11, true)">Iya</button>
-            <button onclick="tampilkanPesan(10, false)">Tidak</button>
-        </div>
-        <div id="pesan10" class="pesan" style="display: none;">
-            <h2>Udah gak ada feeling lagi ya sama aku?</h2>
-            <p>Tapi gak apa-apa, aku akan tetap setia sama kamu.</p>
-            <p>Aku harap perasaanmu cepet balik lagi ke aku.</p>
-            <p>Tetap semangat ya!</p>
-        </div>
-        <div id="pesan11" class="pesan" style="display: none;">
-            <h3>Aku gak sabar banget buat ngelihat kamu lagi.</h3>
-            <p>Aku janji, aku bakal selalu setia dan jaga kamu.</p>
+    <div id="container">
+        <h1>Pesan Untuk Sayangku!</h1>
+        <div id="messageContainer" class="container">
+            <div class="pesan">
+                <p>Aku ada pesan buat kamu maaf aku belum bisa balas chat wa mu</p>
+                <p>Aku sekarang lagi nganter kakak ke bandara</p>
+                <p>Ke mungkinan di bandara sekitar 2-3 jam</p>
+                <p>Aku nunggu sampai kakak ku terbang baru pulang</p>
+            <a href="pesan.html">Buka Pesan</a>
         </div>
     </div>
-</div>
-
-<script src="script.js"></script>
-
-</body>
-</html>

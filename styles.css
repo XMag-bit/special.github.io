@@ -1,36 +1,88 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffe6f2; /* warna latar */
-    color: #333; /* warna teks */
+    font-family: 'Jost', sans-serif; /* Menggunakan font 'Jost' */
+    background: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke; /* warna teks */
     text-align: center;
 }
 
 h1 {
     color: #ff66b2; /* warna teks judul */
+    padding-bottom: 10%;
+    text-shadow: 
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333; /* Outline */
 }
 
 h2 {
-    color: #fa3fe1; /* warna teks judul */
+    color: #ffffff; /* warna teks judul */
     font-size: 200%;
+    text-shadow: 
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333; /* Outline */
 }
 
 h3 {
-    color: #fa3fe1; /* warna teks judul */
+    color: #ffffff; /* warna teks judul */
     font-size: 200%;
+    text-shadow: 
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333; /* Outline */
 }
 
 
+.pesan {
+    padding: 10px 5%;
+}
+
+.pesan p {
+    padding: 5px;
+}
+
+#messageContainer {
+    border-radius: 5px;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gunakan nilai alpha 0.5 untuk 50% transparansi */
+    text-shadow: 
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333; /* Outline */
+}
+
 button {
-    background-color: #ff66b2; /* warna tombol */
-    color: white; /* warna teks tombol */
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gunakan nilai alpha 0.5 untuk 50% transparansi */
+    color: whitesmoke; /* warna teks tombol */
+    text-shadow: 
+    -1px -1px 0 #333,  
+     1px -1px 0 #333,
+    -1px  1px 0 #333,
+     1px  1px 0 #333; /* Outline */
+    transform: translateX(-0%); /* Geser tombol sejauh setengah lebarnya ke kiri */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
+a {
+    background-color: #333;
+    display: inline-block;
+    padding: 5px 10px;
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+
 button:hover {
-    background-color: #ff6666;
+    background-color: black;
+    color: whitesmoke;
 }
 
 button:focus {
@@ -39,7 +91,7 @@ button:focus {
 .sticker {
     max-width: 50%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 @media screen and (orientation: portrait) {
